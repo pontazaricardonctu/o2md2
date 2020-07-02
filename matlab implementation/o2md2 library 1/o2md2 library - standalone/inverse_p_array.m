@@ -10,7 +10,7 @@ function result = inverse_p_array(f)
 
     %create identity element
     e=zeros(1,sizeOfF);
-    e(1)=1;
+    e(sizeOfF)=1;   %correction for rotation matrix v.03
 
     M=rotationMatrix(f);
 
